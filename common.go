@@ -48,6 +48,8 @@ func init() {
 	})
 	log.Println("Templates Parsed")
 }
+
+// Log is middleware to show each request
 func Log(router http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// Get Time At Start Of Request
@@ -77,6 +79,7 @@ func Log(router http.Handler) http.Handler {
 	})
 }
 
+// View will render a template view
 func View(w http.ResponseWriter, r *http.Request, tmplN string, data interface{}) {
 
 	err := templates.Funcs(template.FuncMap{
@@ -113,6 +116,7 @@ func SendJSON(w http.ResponseWriter, data interface{}) {
 	w.Write(msg)
 }
 
+// Sesh is a helper to simplify getting a session down to: session := common.Sesh(r)
 func Sesh(r *http.Request) *sessions.Session {
 	session, err := store.Get(r, "default-session")
 	if err != nil {
