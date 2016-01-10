@@ -49,13 +49,13 @@ func main() {
 func appendMain() error {
 	file, err := os.Create("./main.go")
 	if err != nil {
-		return errors.New("WebGen: Failed to create index view" + err.Error())
+		return errors.New("WebGen: Failed to create main.go" + err.Error())
 	}
 	defer file.Close()
 
 	_, err = file.Write([]byte(mainFile))
 	if err != nil {
-		return errors.New("WebGen: Failed to create index view" + err.Error())
+		return errors.New("WebGen: Failed to create main.go" + err.Error())
 	}
 	file.Close()
 
