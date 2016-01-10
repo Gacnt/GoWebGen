@@ -38,7 +38,9 @@ When inside your new project simply run:
 webgen
 ```
 
-You will see "Created!"
+You will see 
+
+>"Created!"
 
 Then you will be good to go!
 
