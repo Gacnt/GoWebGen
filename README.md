@@ -43,7 +43,17 @@ You will see
 
 >"Created!"
 
+Navigate to "/controllers/common/common.go" and go to: `var store = sessions.NewCookieStore([]byte("your-key"))` replace `your-key` with something more secure.
+
 Then you will be good to go!
+
+# Extras
+Includes helpers like:
+```
+common.View(w http.ResponseWriter, r *http.Request, tmplN string, data interface{}) // Renders a template
+common.SendJSON(w http.ResponseWriter, data interface{}) // Sends a JSON response
+common.Sesh(r *http.Request) *sessions.Session // Retrieves the gorilla session
+```
 
 # FAQ
 - How do I create a new template file
