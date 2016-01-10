@@ -45,8 +45,10 @@ You will see
 
 Navigate to "/controllers/common/common.go" and go to: 
 ```
-var store = sessions.NewCookieStore([]byte("your-key"))` replace `your-key` with something more secure.
+var store = sessions.NewCookieStore([]byte("your-key"))`
 ```
+
+replace `your-key` with something more secure.
 
 Then you will be good to go!
 
