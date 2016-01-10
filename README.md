@@ -44,3 +44,20 @@ You will see
 
 Then you will be good to go!
 
+# FAQ
+- How do I create a new template file
+  - Simply create your file, and follow [this](#tstruct) structure
+
+
+# Template Structure <a name='tstruct'/>
+```
+{ define "index" }} {{ template "_header" . }}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-centered text-center">
+            <h3>Enjoy!</h3>
+        </div>
+    </div>
+</div>
+
+{{ template "_footer" . }} {{ end }}
