@@ -21,7 +21,7 @@ Go Web Gen creates a skeleton for a go app, following this structure:
 ```
 
 #Prerequisites
-**GoWebGen** assumes you have set your `$GOPATH`, and are running the command from with your `$GOPATH/src/github.com/<Your Account>/<Your New Project>`
+**GoWebGen** assumes you have set your `$GOPATH`, and are running the command from within your `$GOPATH/src/github.com/<Your Account>/<Your New Project>`
 
 #Installation
 Just run
