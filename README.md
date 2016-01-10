@@ -48,6 +48,8 @@ Then you will be good to go!
 # FAQ
 - How do I create a new template file
   - Simply create your file, and follow [this](#tstruct) structure
+- How do I render include static css/js/img files
+  - In your template, just include as you normally would with the path `/static/<js|img|css>/yourFile.<js|img|css>
 
 
 # Template Structure <a name='tstruct'/>
