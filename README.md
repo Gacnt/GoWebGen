@@ -34,6 +34,7 @@ Create your new project folder within:
 `$GOPATH/src/github.com/<Your Account>/<Your New Project>`
 
 When inside your new project simply run:
+
 ```
 webgen
 ```
@@ -50,14 +51,15 @@ Then you will be good to go!
 
 
 # Template Structure <a name='tstruct'/>
-```
-{ define "index" }} {{ template "_header" . }}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-10 col-centered text-center">
-            <h3>Enjoy!</h3>
-        </div>
-    </div>
-</div>
 
+In the `define` tag put whatever you want for a name, you can later render this template from a controller by calling:
+
+```
+common.View(w, r, "name", nil)
+```
+
+```
+{ define "newName" }} {{ template "_header" . }}
+    // Put whatever you want inside here 
 {{ template "_footer" . }} {{ end }}
+```
