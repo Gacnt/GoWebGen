@@ -36,7 +36,7 @@ Create your new project folder within:
 When inside your new project simply run:
 
 ```
-webgen
+GoWebGen
 ```
 
 You will see 
