@@ -18,8 +18,8 @@ import (
 	"log"
 	"net/http"
 
-    ` + commonVal + `
-    ` + indexVal + `
+	` + commonVal + `
+	` + indexVal + `
 	"github.com/gorilla/mux"
 )
 
